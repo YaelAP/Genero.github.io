@@ -1,0 +1,227 @@
+/* Aseguramos que todo el contenido sea responsivo */
+* {
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(1709c1d914dbf.jpg);
+}
+
+/* Contenedor principal para alinear el título y el logo */
+.Titulo {
+    display: flex;
+    justify-content: space-between; /* Alinea el título a la izquierda y el logo a la derecha */
+    align-items: center; /* Centra el título y el logo verticalmente */
+    padding: 20px 40px; /* Espaciado alrededor */
+    background-color: mediumpurple;
+}
+
+.Titulo h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* Estilo general para títulos */
+h1, h2 {
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    background-color: mediumpurple;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Ajustes de estilo para la sección explicativa */
+.Explicacion {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center; /* Centrado del texto */
+   
+}
+
+.Explicacion p {
+    margin-bottom: 20px;
+    text-align: center; /* Centrado del texto */
+}
+
+/* Ajustes para las imágenes */
+.imagen {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Listas y enlaces */
+.Lista {
+    padding: 20px;
+    text-align: center;
+}
+
+.Lista ul {
+    list-style-type: none;
+    
+}
+
+.Lista li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+   
+}
+
+.Lista a {
+    text-decoration: none;
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+.Lista a:hover {
+    text-decoration: underline;
+}
+
+.Lista h2 {
+    font-family: cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Ajustes para los videos */
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Detalles y acordeón */
+details {
+    background-color: #003366; /* Fondo azul marino */
+    padding: 15px;
+    margin: 10px auto; /* Centrado */
+    border-radius: 5px;
+    max-width: 90%; /* Ajuste del ancho máximo */
+    text-align: center; /* Centrar el texto dentro de details */
+}
+
+/* Estilo para el summary de los detalles */
+details summary {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white; /* Texto blanco */
+    padding: 5px 10px;
+    background-color: #1a73e8; /* Fondo azul más claro para el summary */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+details summary:hover {
+    background-color: #0d47a1; /* Fondo azul más oscuro al pasar el mouse */
+}
+
+/* Estilo para el contenido del detalle (p) */
+details p {
+    background-color: #003366; /* Fondo azul marino */
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+
+/* Ajustes de fuente en pantallas pequeñas */
+@media (max-width: 768px) {
+    .Titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Titulo h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+
+    .Explicacion {
+        font-size: 1rem;
+    }
+
+    .imagen img {
+        max-width: 200px;
+    }
+
+    .Lista li {
+        font-size: 1rem;
+    }
+
+    video {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Titulo h1 {
+        font-size: 1.2rem;
+    }
+
+    .Lista h2 {
+        font-size: 1.2rem;
+    }
+
+    .Explicacion {
+        font-size: 0.9rem;
+    }
+
+    .Lista li {
+        font-size: 0.9rem;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+/* Estilo para el pie de página */
+.titulo2 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: bold;
+    background-color: mediumpurple;
+    color: white;
+}
+
+/* Asegurar que los detalles no se desborden */
+details p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
